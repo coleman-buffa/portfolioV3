@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 	<!-- Font Awesome for Icons -->
 	<script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
-	<!-- Foundation CSS Framework -->
+	<!-- Compressed CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
 		integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 	<!-- Custom Styling -->
@@ -18,15 +18,8 @@
 
 <body>
 
-	<header class="sticky-shrinknav-header">
-		<h1 class="sticky-shrinknav-header-title">sticky-shrinknav</h1>
-		<ul class="menu align-center sticky-shrinknav-menu">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</header>
+
+	
 
 
 
@@ -54,7 +47,15 @@
 	</ul>
 
 	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Compressed JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+		integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+	
+	<script>
+		$(document).foundation();
+	</script>
 	<!-- Custom Scripting -->
 	<script src="script.js"></script>
 </body>
