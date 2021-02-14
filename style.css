@@ -1,4 +1,14 @@
+.top-bar {
+	background-color: #fefefe;
+}
 
+.top-bar, .top-bar ul {
+	background-color: #fefefe;
+}
+
+.sticky-topbar {
+  width: 100%;
+}
 
 .sticky-social-bar {
   padding: 0;
