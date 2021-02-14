@@ -1,4 +1,4 @@
-references/
-node_modules/
+/references/
+/node_modules/
 /db
 .DS_STORE
