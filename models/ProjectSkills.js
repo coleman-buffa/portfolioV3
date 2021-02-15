@@ -5,4 +5,5 @@ module.exports = function (sequelize, DataTypes) {
 		models.ProjectSkills.belongsTo(models.Project, {onDelete: "cascade"});
 		models.ProjectSkills.belongsTo(models.Skill, {onDelete: "cascade"});
 	}
+	return ProjectSkills;
 };

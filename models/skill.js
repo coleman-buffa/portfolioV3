@@ -8,4 +8,5 @@ module.exports = function(sequelize, DataTypes) {
 	Skill.associate = models => {
 		models.Skill.hasMany(models.ProjectSkills, {onDelete: "cascade"});
 	}
+	return Skill;
 };
