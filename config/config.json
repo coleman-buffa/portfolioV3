@@ -2,10 +2,9 @@
   "development": {
     "username": "root",
     "password": "password",
-    "database": "database_development",
+    "database": "portfolio_DB",
     "host": "localhost",
-    "dialect": "mysql",
-		"port": 8080
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
