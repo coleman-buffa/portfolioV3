@@ -1,6 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
 	let Skill = sequelize.define("Skill",  {
-		//Define schema for Skill here
+		skill: {
+			type: DataTypes.STRING,
+			allowNull: false
+		}
 	});
-	//Define associations between tables here
-}
+	Skill.associate = models => {
+		models.Skill.hasMany(models.ProjectSkills, {onDelete: "cascade"});
+	}
+};
