@@ -1,7 +1,10 @@
 var db = require("../models");
 
-
 module.exports = function (app) {
-	//Insert api-routes go here
+	app.get("/api/allskills", (req, res) => {
+    db.Skill.findAll().then((data) => {
+      res.json(data);
+    });
+  });
 };
   
