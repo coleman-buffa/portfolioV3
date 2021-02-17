@@ -1,6 +1,10 @@
 $(document).ready(function () {
-  $.get("/api/allprojects").then((response) => {
+  $.get("/api/navprojects").then((response) => {
     renderProjectList(response);
+  });
+
+  $.get("/api/allprojects").then((response) => {
+    renderProjectCards(response);
   });
 
 });
@@ -11,3 +15,7 @@ function renderProjectList(input) {
     $("#projectList").append(html);
   });
 }
+
+function renderProjectCards(input) {
+  console.log(input);
+};
