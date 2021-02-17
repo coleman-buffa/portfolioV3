@@ -1,6 +1,6 @@
 # Portfolio
 
-Description of build here...
+This project is a full stack portfolio. Project information and the associated skills needed the build these projects are stored in a MySQL database. 
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ Description of build here...
 
 ## Goals and Methods
 
-Project goals and methods...
+The first goal of the build was to make a new portfolio webpage that is built using the full stack of web development technologies. 
 
 ## Deployed Link
 
@@ -30,7 +30,7 @@ Project goals and methods...
 
 Coleman Buffa
 
-* [Git Hub]()
+* [Git Hub](https://github.com/coleman-buffa)
 * [My Portfolio]()
 * [LinkedIn](https://www.linkedin.com/in/coleman-buffa/)
 
