@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 function renderProjectList(input) {
   input.forEach(element => {
-    let html = `<li><a href=#>${element.title}</a><li>`;
+    let html = `<li><a href=#${element.title}>${element.title}</a><li>`;
     $("#projectList").append(html);
   });
 }
@@ -20,7 +20,7 @@ function renderProjectCards(input) {
   console.log(input);
   input.forEach(element => {
     let html = 
-    `<div class="work-feature-block grid-x">
+    `<div class="work-feature-block grid-x" ID="${element.title}">
     <div class="cell medium-7">
       <img class="work-feature-block-image" src="https://placehold.it/600x400" />
     </div>
