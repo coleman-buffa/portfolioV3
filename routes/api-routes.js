@@ -21,6 +21,14 @@ module.exports = function (app) {
     });
   });
 
+  app.get("/api/projectskills", (req, res) => {
+    db.ProjectSkills.findAll({
+      include: [{model: db.Skill, attributes: ["skill"]}]
+    }).then((data) => {
+      res.json(data);
+    });
+  });
+
 
 };
 

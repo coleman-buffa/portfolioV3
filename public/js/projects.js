@@ -7,17 +7,20 @@ $(document).ready(function () {
     renderProjectCards(response);
   });
 
+  $.get("/api/projectskills").then((response) => {
+    console.log(response);
+  })
+
 });
 
 function renderProjectList(input) {
   input.forEach(element => {
-    let html = `<li><a href=#${element.title}>${element.title}</a><li>`;
+    let html = `<li><a href=#"${element.title}" data-magellan-target="${element.title}">${element.title}</a><li>`;
     $("#projectList").append(html);
   });
 }
 
 function renderProjectCards(input) {
-  console.log(input);
   input.forEach(element => {
     let html = 
     `<div class="work-feature-block grid-x" ID="${element.title}">
