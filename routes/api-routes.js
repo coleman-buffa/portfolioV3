@@ -6,5 +6,14 @@ module.exports = function (app) {
       res.json(data);
     });
   });
+
+  app.get("/api/allprojects", (req, res) => {
+    db.Project.findAll({
+      attributes: ['title']
+    }).then((data) => {
+      res.json(data);
+    });
+  });
+
 };
   
