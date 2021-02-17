@@ -2,129 +2,78 @@
 <html class="no-js" lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Font Awesome for Icons -->
-	<script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
-	<!-- Compressed CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-		integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-	<!-- Custom Styling -->
-	<link rel="stylesheet" href="../css/style.css" />
-	<title>Portfolio V3</title>
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Portfolio V3</title>
 </head>
 
 <body>
 
-	<div class="top-bar-container" data-sticky-container>
-		<div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-			<div class="top-bar align-center">
-				<div class="top-bar-">
-					<ul class="dropdown menu" data-dropdown-menu>
-						<li class="menu-text">Coleman Buffa</li>
-						<li><a href="/">About</a></li>
-						<li class="has-submenu">
-							<a href="/projects">Projects</a>
-							<ul class="submenu menu vertical" data-submenu>
-								<li><a href="#">One</a></li>
-								<li><a href="#">Two</a></li>
-								<li><a href="#">Three</a></li>
-							</ul>
-						</li>						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="top-bar-container" data-sticky-container>
+    <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      <div class="top-bar">
+        <div class="top-bar-">
+          <ul class="dropdown menu" data-dropdown-menu data-magellan>
+            <li class="menu-text">Coleman Buffa</li>
+            <li><a href="/">About</a></li>
+            <li class="has-submenu">
+              <a href="/projects">Projects</a>
+              <ul class="submenu menu vertical" ID="projectList" data-submenu>
+                <!-- Project list from dababase -->
 
-	<ul class="sticky-social-bar">
-		<li class="social-icon">
-			<a href="https://github.com/coleman-buffa">
-				<i class="fa fa-github" aria-hidden="true"></i>
-				<span class="social-icon-text">GitHub</span>
-			</a>
-		</li>
-		<li class="social-icon">
-			<a href="https://www.linkedin.com/in/coleman-buffa/">
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-				<span class="social-icon-text">Linkedin</span>
-			</a>
-		</li>
-		<li class="social-icon">
-			<a href="./public/colemanbuffa_resume.pdf" target="_blank">
-				<i class="fa fa-file-pdf" aria-hidden="true"></i>
-				<span class="social-icon-text">Resume</span>
-			</a>
-		</li>
-	</ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="grid-container">
-		<div class="work-feature-block grid-x">
-			<div class="cell medium-7">
-				<img class="work-feature-block-image" src="https://placehold.it/600x400"/>
-			</div>
-			<div class="cell medium-5">
-				<h2 class="work-feature-block-header">Project Description</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-				<h2>Project Details</h2>
-				<ul>
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-					<li>Item 4</li>
-				</ul>
-			</div>
-		</div>
+  <ul class="sticky-social-bar">
+    <li class="social-icon">
+      <a href="https://github.com/coleman-buffa">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <span class="social-icon-text">GitHub</span>
+      </a>
+    </li>
+    <li class="social-icon">
+      <a href="https://www.linkedin.com/in/coleman-buffa/">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <span class="social-icon-text">Linkedin</span>
+      </a>
+    </li>
+    <li class="social-icon">
+      <a href="./public/colemanbuffa_resume.pdf" target="_blank">
+        <i class="fa fa-file-pdf" aria-hidden="true"></i>
+        <span class="social-icon-text">Resume</span>
+      </a>
+    </li>
+  </ul>
 
-		<div class="work-feature-block grid-x">
-			<div class="cell medium-7">
-				<img class="work-feature-block-image" src="https://placehold.it/600x400"/>
-			</div>
-			<div class="cell medium-5">
-				<h2 class="work-feature-block-header">Project Description</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-				<h2>Project Details</h2>
-				<ul>
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-					<li>Item 4</li>
-				</ul>
-			</div>
-		</div>
+  <div class="grid-container" ID="projectCard">
+    <!-- Insert project cards here -->
 
-		<div class="work-feature-block grid-x">
-			<div class="cell medium-7">
-				<img class="work-feature-block-image" src="https://placehold.it/600x400"/>
-			</div>
-			<div class="cell medium-5">
-				<h2 class="work-feature-block-header">Project Description</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-				<h2>Project Details</h2>
-				<ul>
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-					<li>Item 4</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- JQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
-	<!-- Compressed JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-		integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-
-	<script>
-		$(document).foundation();
-	</script>
-	<!-- Custom Scripting -->
-	<script src="../js/projects.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <!-- Custom Scripting -->
+  <script src="../js/projects.js"></script>
 </body>
 
 </html>
