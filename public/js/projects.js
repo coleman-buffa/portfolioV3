@@ -18,4 +18,26 @@ function renderProjectList(input) {
 
 function renderProjectCards(input) {
   console.log(input);
+  input.forEach(element => {
+    let html = 
+    `<div class="work-feature-block grid-x">
+    <div class="cell medium-7">
+      <img class="work-feature-block-image" src="https://placehold.it/600x400" />
+    </div>
+    <div class="cell medium-5">
+      <h2 class="work-feature-block-header">${element.title}</h2>
+      <p>${element.description}</p>
+      <h2>Project Details</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+  </div>`
+
+  $("#projectCard").append(html);
+  });
+
 };
